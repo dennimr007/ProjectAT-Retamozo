@@ -1,0 +1,1209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*General*/
+
+/*Titulos*/
+h2{
+    margin: 5px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Poppins', italic;
+}
+
+h2 {
+    -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    margin: 5px 5px 5px 5px;
+    text-align: justify;
+}
+
+@-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-700px);
+        transform: translateZ(-700px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-700px);
+        transform: translateZ(-700px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+/*Carrusel responsive*/
+.slide {
+    width: 95%;
+}
+.slide {
+    margin: 10px;
+}
+
+.slide {
+    margin: 10px;
+    border-bottom: solid white 4px;
+}
+
+
+/*footer*/
+footer {
+    grid-area: footer;
+    margin: 7px 7px 7px 7px;
+    border-top: solid 6px white;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    font-size: 3vh;
+}
+
+.facebookPie {
+    width: 25px;
+    height: 25px;
+    margin: 5px 5px 5px 5px;
+}
+
+.instagramPie {
+    width: 25px;
+    height: 25px;
+    margin: 5px 5px 5px 5px;
+}
+
+.whatsappPie {
+    width: 25px;
+    height: 25px;
+    margin: 5px 5px 5px 5px;
+}
+
+
+
+/*smartphone*/
+@media screen and (max-width: 575.98px) {
+    body {
+        background: palevioletred;
+        font-size: 4rem;
+    }
+    
+
+    /*Menu*/
+    header {
+        grid-area: menu;
+        background-color: pink;
+        border: solid 8px white;
+    }
+
+    .menu {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .logo {
+        margin: 10px 10px 10px 10px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .menuNavegacion {
+        font-family: 'Poppins', sans-serif;
+        margin-top: 60px;
+        padding: 7px;
+        width: 100%;
+
+
+    }
+
+    .menuBoton {
+        background-image: linear-gradient(to right, #FFAFBD 0%, #ffc3a0 51%, #FFAFBD 100%)
+    }
+
+    .menuBoton {
+        margin: 5px;
+        padding: 15px 45px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        display: inline-block;
+    }
+
+    .menuBoton:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+    }
+
+     /*Grid Index*/
+     #gridHome {
+        display: grid;
+        grid-template-areas:
+            "menu menu menu"
+            "titulo titulo titulo"
+            "carousel carousel carousel"
+            "info info info"
+            "info info info"
+            "info info info"
+            "footer footer footer";
+        grid-column-gap: 3px;
+        grid-row-gap: 3px;
+        }
+    
+        .titulo {
+            grid-area: titulo;
+        
+        
+        }
+        
+        .carousel {
+            grid-area: carousel; 
+            
+        }
+        
+        .info {
+            grid-area: info;
+            margin-top: 20px;
+            margin: 5px;
+            padding: 5px;
+            border-top: 1px solid white;
+        }
+        
+        .info1 {
+            display: flex;
+            flex-flow: row;
+        }
+        
+        .info2 {
+            display: flex;
+            flex-flow: row;
+        }
+        
+        .info3 {
+            display: flex;
+            flex-flow: row;
+        }
+        
+        .infoFoto {
+            margin: 5px 5px 5px 5px;
+            padding: 7px 7px 7px 7px;
+            align-self: baseline;
+            width: 25%;
+        
+        }
+        
+        .infoTexto {
+            text-align: center;
+        }
+    
+        /*Grid Contacto*/
+        #gridContacto {
+            display: grid;
+            grid-template-areas:
+                "menu menu menu"
+                "titulo titulo titulo"
+                "contacForm contactForm contactForm"
+                "pieForm pieForm pieForm"
+                "footer footer footer";
+            grid-column-gap: 3px;
+            grid-row-gap: 3px;
+        
+        }
+        
+        .titulo {
+            grid-area: titulo;
+        }
+        
+        form {
+            font-family: 'Poppins';
+            border: solid 5px white;
+            padding: 5px 5px 5px 5px;
+            margin: 3px 3px 3px 3px;
+            align-content: center;
+        }
+        
+        .contacForm {
+            grid-area: contacForm;    
+        }
+        
+        section {
+            width: 100%;
+            margin: 5px 5px 5px 5px;
+        }
+        
+        .pieForm {
+            grid-area: pieForm;
+        }
+        
+        .pieForm {
+            display: flex;
+            flex-flow: row;
+            margin: 8px 8px 8px 8px;
+            padding: 5px 5px 5px 5px;
+        }
+        
+        .textPie {
+            margin-bottom: 30px;
+        }
+        
+        .facebook {
+            width: 130px;
+            height: 60px;
+            margin-top: 10px;
+        
+        }
+        
+        .instagram {
+            width: 140px;
+            height: 60px;
+            margin-top: 10px;
+        }
+        
+        .whatsapp {
+            width: 160px;
+            height: 60px;
+        }
+    
+        /*Grid Experiencia*/
+        #gridExperiencia {
+            display: grid;
+            grid-template-areas:
+                "menu menu menu"
+                "titulo titulo titulo"
+                "video video video"
+                "textExp2 textExp2 textExp2"
+                "footer footer footer";
+            grid-column-gap: 3px;
+            grid-row-gap: 3px;
+        }
+        
+        .titulo {
+            grid-area: titulo;
+        }
+        
+        .video {
+            grid-area: video;
+            margin: 5px 5px 5px 5px;
+            padding: 5px 5px 5px 5px;
+            position: relative;
+            width: 60%;
+            margin-left: 25%;
+            justify-content: center;
+        }
+        
+        .textExp2 {
+            grid-area: textExp2;
+            margin: 5px 5px 5px 5px;
+        }
+        
+    
+        /*Grid DondeEstamos*/
+        #gridDondeEstamos {
+            display: grid;
+            grid-template-areas:
+                "menu menu menu"
+                "titulo titulo titulo"
+                "ubicacion ubicacion ubicacion"
+                "mapa mapa mapa"
+                "direccion localExterior localExterior"
+                "fotos fotos fotos"
+                "footer footer footer";
+            grid-column-gap: 3px;
+            grid-row-gap: 3px;
+            
+        }
+        
+        .titulo {
+            grid-area: titulo;
+    
+        }
+        
+        
+        .ubicacion {
+            grid-area: ubicacion;
+        }
+        
+        .ubicacion {
+            margin: 10px 10px 10px 10px;
+            padding: 5px 5px 5px 5px;
+        }
+        
+        
+        
+        .mapa {
+            grid-area: mapa;
+            margin: 5px 5px 5px 5px;
+            padding: 5px 5px 5px 5px;
+            width: 60%;
+            margin-left: 23%;
+            justify-content: center;
+            
+        
+        }
+        
+        
+        .localExterior {
+            grid-area: localExterior;
+            width: 80%;
+            margin: 5px 5px 5px 25%;
+            padding: 5px 5px 5px 5px;
+        }
+        
+        .direccion {
+            grid-area: direccion;
+            font-family: 'Poppins', italic;
+            font-size: 24px;
+            margin: 10px 10px 10px 10px;
+            padding: 7px 7px 7px 7px;
+        }
+        
+        .fotos{
+            grid-area: fotos;
+        }
+    
+        .fotos{
+            display: flex;
+            width: 90%;
+        }
+    
+        .fotosCiudad1 {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+        }    
+        
+        .fotosCiudad2 {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+        }  
+    
+        .fotosCiudad3 {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+        }  
+    
+        /*Grid Quienes Somos*/
+        #gridQuienes {
+            display: grid;
+            grid-template-areas:
+                "menu menu menu"
+                "titulo titulo titulo"
+                "encabezado encabezado encabezado"
+                "parrafo1 parrafo1 parrafo1"
+                "parrafo2 parrafo2 parrafo2"
+                "footer footer footer";
+            grid-column-gap: 3px;
+            grid-row-gap: 3px;
+        }
+        
+        
+        .titulo {
+            grid-area: titulo;
+        }
+        
+        .encabezado {
+            grid-area: encabezado;
+        }
+    
+        .encabezado2{
+            display: flex;
+            flex-flow: row;
+        }
+    
+        .encabezadoimg {
+            margin: 5px 5px 5px 5px;
+            padding: 7px 7px 7px 7px;
+            width: 25%;
+            
+        }
+        
+        
+        .descripcion1 {
+            margin: 5px;
+            justify-content: space-around;
+        
+        }
+        
+        .parrafo1 {
+            margin: 5px 5px 5px 5px;
+        }
+        
+        .parrafo2 {
+            margin: 5px 5px 5px 5px;
+        
+        
+        }
+        .container {
+            width: 100%;
+            align-content: center;    }
+    
+
+}
+
+/*tablet*/
+@media (min-width: 576.98px) and (max-width: 991.98px) {
+    body {
+        background: rgba(160, 30, 106, 0.815);
+    }
+
+    /*Menu*/
+    header {
+        grid-area: menu;
+        background-color: pink;
+        border: solid 8px white;
+    }
+
+    .menu {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .logo {
+        margin: 10px 10px 10px 10px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .menuNavegacion {
+        font-family: 'Poppins', sans-serif;
+        margin-top: 60px;
+        padding: 7px;
+        width: 100%;
+
+
+    }
+
+    .menuBoton {
+        background-image: linear-gradient(to right, #FFAFBD 0%, #ffc3a0 51%, #FFAFBD 100%)
+    }
+
+    .menuBoton {
+        margin: 5px;
+        padding: 15px 45px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        display: inline-block;
+    }
+
+    .menuBoton:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+
+
+
+     /*Grid Index*/
+     #gridHome {
+        display: grid;
+        grid-template-areas:
+            "menu menu menu"
+            "titulo titulo titulo"
+            "carousel carousel carousel"
+            "info info info"
+            "info info info"
+            "info info info"
+            "footer footer footer";
+        grid-column-gap: 3px;
+        grid-row-gap: 3px;
+        }
+    
+        .titulo {
+            grid-area: titulo;
+        
+        
+        }
+        
+        .carousel {
+            grid-area: carousel; 
+            
+        }
+        
+        .info {
+            grid-area: info;
+            margin-top: 20px;
+            margin: 5px;
+            padding: 5px;
+            border-top: 1px solid white;
+        }
+        
+        .info1 {
+            display: flex;
+            flex-flow: row;
+        }
+        
+        .info2 {
+            display: flex;
+            flex-flow: row;
+        }
+        
+        .info3 {
+            display: flex;
+            flex-flow: row;
+        }
+        
+        .infoFoto {
+            margin: 5px 5px 5px 5px;
+            padding: 7px 7px 7px 7px;
+            align-self: baseline;
+            width: 25%;
+        
+        }
+        
+        .infoTexto {
+            text-align: center;
+        }
+    
+        /*Grid Contacto*/
+        #gridContacto {
+            display: grid;
+            grid-template-areas:
+                "menu menu menu"
+                "titulo titulo titulo"
+                "contacForm contactForm contactForm"
+                "pieForm pieForm pieForm"
+                "footer footer footer";
+            grid-column-gap: 3px;
+            grid-row-gap: 3px;
+        
+        }
+        
+        .titulo {
+            grid-area: titulo;
+        }
+        
+        form {
+            font-family: 'Poppins';
+            border: solid 5px white;
+            padding: 5px 5px 5px 5px;
+            margin: 3px 3px 3px 3px;
+            align-content: center;
+        }
+        
+        .contacForm {
+            grid-area: contacForm;    
+        }
+        
+        section {
+            width: 100%;
+            margin: 5px 5px 5px 5px;
+        }
+        
+        .pieForm {
+            grid-area: pieForm;
+        }
+        
+        .pieForm {
+            display: flex;
+            flex-flow: row;
+            margin: 8px 8px 8px 8px;
+            padding: 5px 5px 5px 5px;
+        }
+        
+        .textPie {
+            margin-bottom: 30px;
+        }
+        
+        .facebook {
+            width: 130px;
+            height: 60px;
+            margin-top: 10px;
+        
+        }
+        
+        .instagram {
+            width: 140px;
+            height: 60px;
+            margin-top: 10px;
+        }
+        
+        .whatsapp {
+            width: 160px;
+            height: 60px;
+        }
+    
+        /*Grid Experiencia*/
+        #gridExperiencia {
+            display: grid;
+            grid-template-areas:
+                "menu menu menu"
+                "titulo titulo titulo"
+                "video video video"
+                "textExp2 textExp2 textExp2"
+                "footer footer footer";
+            grid-column-gap: 3px;
+            grid-row-gap: 3px;
+        }
+        
+        .titulo {
+            grid-area: titulo;
+        }
+        
+        .video {
+            grid-area: video;
+            margin: 5px 5px 5px 5px;
+            padding: 5px 5px 5px 5px;
+            position: relative;
+            width: 60%;
+            margin-left: 25%;
+            justify-content: center;
+        }
+        
+        .textExp2 {
+            grid-area: textExp2;
+            margin: 5px 5px 5px 5px;
+        }
+        
+    
+        /*Grid DondeEstamos*/
+        #gridDondeEstamos {
+            display: grid;
+            grid-template-areas:
+                "menu menu menu"
+                "titulo titulo titulo"
+                "ubicacion ubicacion ubicacion"
+                "mapa mapa mapa"
+                "direccion localExterior localExterior"
+                "fotos fotos fotos"
+                "footer footer footer";
+            grid-column-gap: 3px;
+            grid-row-gap: 3px;
+            
+        }
+        
+        .titulo {
+            grid-area: titulo;
+    
+        }
+        
+        
+        .ubicacion {
+            grid-area: ubicacion;
+        }
+        
+        .ubicacion {
+            margin: 10px 10px 10px 10px;
+            padding: 5px 5px 5px 5px;
+        }
+        
+        
+        
+        .mapa {
+            grid-area: mapa;
+            margin: 5px 5px 5px 5px;
+            padding: 5px 5px 5px 5px;
+            width: 60%;
+            margin-left: 23%;
+            justify-content: center;
+            
+        
+        }
+        
+        
+        .localExterior {
+            grid-area: localExterior;
+            width: 80%;
+            margin: 5px 5px 5px 25%;
+            padding: 5px 5px 5px 5px;
+        }
+        
+        .direccion {
+            grid-area: direccion;
+            font-family: 'Poppins', italic;
+            font-size: 24px;
+            margin: 10px 10px 10px 10px;
+            padding: 7px 7px 7px 7px;
+        }
+        
+        .fotos{
+            grid-area: fotos;
+        }
+    
+        .fotos{
+            display: flex;
+            width: 90%;
+        }
+    
+        .fotosCiudad1 {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+        }    
+        
+        .fotosCiudad2 {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+        }  
+    
+        .fotosCiudad3 {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+        }  
+    
+        /*Grid Quienes Somos*/
+        #gridQuienes {
+            display: grid;
+            grid-template-areas:
+                "menu menu menu"
+                "titulo titulo titulo"
+                "encabezado encabezado encabezado"
+                "parrafo1 parrafo1 parrafo1"
+                "parrafo2 parrafo2 parrafo2"
+                "footer footer footer";
+            grid-column-gap: 3px;
+            grid-row-gap: 3px;
+        }
+        
+        
+        .titulo {
+            grid-area: titulo;
+        }
+        
+        .encabezado {
+            grid-area: encabezado;
+        }
+    
+        .encabezado2{
+            display: flex;
+            flex-flow: row;
+        }
+    
+        .encabezadoimg {
+            margin: 5px 5px 5px 5px;
+            padding: 7px 7px 7px 7px;
+            width: 25%;
+            
+        }
+        
+        
+        .descripcion1 {
+            margin: 5px;
+            justify-content: space-around;
+        
+        }
+        
+        .parrafo1 {
+            margin: 5px 5px 5px 5px;
+        }
+        
+        .parrafo2 {
+            margin: 5px 5px 5px 5px;
+        
+        
+        }
+        .container {
+            width: 100%;
+            align-content: center;    }
+    
+}
+
+/*destok*/
+@media (min-width: 992.98px) and (max-width: 1400px) {
+    body {
+        background: pink;
+    }
+
+    /*Menu*/
+    header {
+        grid-area: menu;
+        background-color: pink;
+        border: solid 8px white;
+    }
+
+    .menu {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .logo {
+        margin: 10px 10px 10px 10px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .menuNavegacion {
+        font-family: 'Poppins', sans-serif;
+        margin-top: 60px;
+        padding: 7px;
+        width: 100%;
+
+
+    }
+
+    .menuBoton {
+        background-image: linear-gradient(to right, #FFAFBD 0%, #ffc3a0 51%, #FFAFBD 100%)
+    }
+
+    .menuBoton {
+        margin: 5px;
+        padding: 15px 45px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        display: inline-block;
+    }
+
+    .menuBoton:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+    }
+    /*Grid Index*/
+    #gridHome {
+    display: grid;
+    grid-template-areas:
+        "menu menu menu"
+        "titulo titulo titulo"
+        "carousel carousel carousel"
+        "info info info"
+        "info info info"
+        "info info info"
+        "footer footer footer";
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    }
+
+    .titulo {
+        grid-area: titulo;
+    
+    
+    }
+    
+    .carousel {
+        grid-area: carousel; 
+        
+    }
+    
+    .info {
+        grid-area: info;
+        margin-top: 20px;
+        margin: 5px;
+        padding: 5px;
+        border-top: 1px solid white;
+    }
+    
+    .info1 {
+        display: flex;
+        flex-flow: row;
+    }
+    
+    .info2 {
+        display: flex;
+        flex-flow: row;
+    }
+    
+    .info3 {
+        display: flex;
+        flex-flow: row;
+    }
+    
+    .infoFoto {
+        margin: 5px 5px 5px 5px;
+        padding: 7px 7px 7px 7px;
+        align-self: baseline;
+        width: 25%;
+    
+    }
+    
+    .infoTexto {
+        text-align: center;
+    }
+
+    /*Grid Contacto*/
+    #gridContacto {
+        display: grid;
+        grid-template-areas:
+            "menu menu menu"
+            "titulo titulo titulo"
+            "contacForm contactForm contactForm"
+            "pieForm pieForm pieForm"
+            "footer footer footer";
+        grid-column-gap: 3px;
+        grid-row-gap: 3px;
+    
+    }
+    
+    .titulo {
+        grid-area: titulo;
+    }
+    
+    form {
+        font-family: 'Poppins';
+        border: solid 5px white;
+        padding: 5px 5px 5px 5px;
+        margin: 3px 3px 3px 3px;
+        align-content: center;
+    }
+    
+    .contacForm {
+        grid-area: contacForm;    
+    }
+    
+    section {
+        width: 100%;
+        margin: 5px 5px 5px 5px;
+    }
+    
+    .pieForm {
+        grid-area: pieForm;
+    }
+    
+    .pieForm {
+        display: flex;
+        flex-flow: row;
+        margin: 8px 8px 8px 8px;
+        padding: 5px 5px 5px 5px;
+    }
+    
+    .textPie {
+        margin-bottom: 30px;
+    }
+    
+    .facebook {
+        width: 130px;
+        height: 60px;
+        margin-top: 10px;
+    
+    }
+    
+    .instagram {
+        width: 140px;
+        height: 60px;
+        margin-top: 10px;
+    }
+    
+    .whatsapp {
+        width: 160px;
+        height: 60px;
+    }
+
+    /*Grid Experiencia*/
+    #gridExperiencia {
+        display: grid;
+        grid-template-areas:
+            "menu menu menu"
+            "titulo titulo titulo"
+            "video video video"
+            "textExp2 textExp2 textExp2"
+            "footer footer footer";
+        grid-column-gap: 3px;
+        grid-row-gap: 3px;
+    }
+    
+    .titulo {
+        grid-area: titulo;
+    }
+    
+    .video {
+        grid-area: video;
+        margin: 5px 5px 5px 5px;
+        padding: 5px 5px 5px 5px;
+        position: relative;
+        width: 60%;
+        margin-left: 25%;
+        justify-content: center;
+    }
+    
+    .textExp2 {
+        grid-area: textExp2;
+        margin: 5px 5px 5px 5px;
+    }
+    
+
+    /*Grid DondeEstamos*/
+    #gridDondeEstamos {
+        display: grid;
+        grid-template-areas:
+            "menu menu menu"
+            "titulo titulo titulo"
+            "ubicacion ubicacion ubicacion"
+            "mapa mapa mapa"
+            "direccion localExterior localExterior"
+            "fotos fotos fotos"
+            "footer footer footer";
+        grid-column-gap: 3px;
+        grid-row-gap: 3px;
+        
+    }
+    
+    .titulo {
+        grid-area: titulo;
+
+    }
+    
+    
+    .ubicacion {
+        grid-area: ubicacion;
+    }
+    
+    .ubicacion {
+        margin: 10px 10px 10px 10px;
+        padding: 5px 5px 5px 5px;
+    }
+    
+    
+    
+    .mapa {
+        grid-area: mapa;
+        margin: 5px 5px 5px 5px;
+        padding: 5px 5px 5px 5px;
+        width: 60%;
+        margin-left: 23%;
+        justify-content: center;
+        
+    
+    }
+    
+    
+    .localExterior {
+        grid-area: localExterior;
+        width: 80%;
+        margin: 5px 5px 5px 25%;
+        padding: 5px 5px 5px 5px;
+    }
+    
+    .direccion {
+        grid-area: direccion;
+        font-family: 'Poppins', italic;
+        font-size: 24px;
+        margin: 10px 10px 10px 10px;
+        padding: 7px 7px 7px 7px;
+    }
+    
+    .fotos{
+        grid-area: fotos;
+    }
+
+    .fotos{
+        display: flex;
+        width: 90%;
+    }
+
+    .fotosCiudad1 {
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+    }    
+    
+    .fotosCiudad2 {
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+    }  
+
+    .fotosCiudad3 {
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+    }  
+
+    /*Grid Quienes Somos*/
+    #gridQuienes {
+        display: grid;
+        grid-template-areas:
+            "menu menu menu"
+            "titulo titulo titulo"
+            "encabezado encabezado encabezado"
+            "parrafo1 parrafo1 parrafo1"
+            "parrafo2 parrafo2 parrafo2"
+            "footer footer footer";
+        grid-column-gap: 3px;
+        grid-row-gap: 3px;
+    }
+    
+    
+    .titulo {
+        grid-area: titulo;
+    }
+    
+    .encabezado {
+        grid-area: encabezado;
+    }
+
+    .encabezado2{
+        display: flex;
+        flex-flow: row;
+    }
+
+    .encabezadoimg {
+        margin: 5px 5px 5px 5px;
+        padding: 7px 7px 7px 7px;
+        width: 25%;
+        
+    }
+    
+    
+    .descripcion1 {
+        margin: 5px;
+        justify-content: space-around;
+    
+    }
+    
+    .parrafo1 {
+        margin: 5px 5px 5px 5px;
+    }
+    
+    .parrafo2 {
+        margin: 5px 5px 5px 5px;
+    
+    
+    }
+    .container {
+        width: 100%;
+        align-content: center;    }
+    
+}
+
+
